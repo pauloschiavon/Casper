@@ -100,4 +100,5 @@ h4, h5, h6 {
 
 .post-footer blockquote p {
     font-size: 1.8rem !important;
+    text-align: justify;
 }
