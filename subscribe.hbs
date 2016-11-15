@@ -1,16 +1,22 @@
 {{!< default}}
 {{!-- The tag above means - insert everything in this file into the {body} of the default.hbs template --}}
 
-{{!-- If we have a tag cover, display that - else blog cover - else nothing --}}
-<header class="main-header no-cover">
+<header class="main-header author-head no-cover">
     <nav class="main-nav overlay clearfix">
         {{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>{{/if}}
         {{#if @blog.navigation}}
             <a class="menu-button icon-menu" href="#"><span class="word">Menu</span></a>
         {{/if}}
     </nav>
-    <div class="vertical">
-        <div class="main-header-content inner">
+</header>
+
+    
+
+
+{{!-- The main content area on the subscribe --}}
+<main class="content" role="main">
+    <article>
+        <footer class="post-footer">
             {{#if success}}
                 <h3 class="gh-subscribe-title">Inscrito!</h3>
 
@@ -18,16 +24,13 @@
                     Você foi inscrito com sucesso no <em>{{@blog.title}}</em> com o e-mail <em>{{email}}</em>.
                 </p>
             {{else}}
-                <h3 class="gh-subscribe-title">Inscreva-se no {{@blog.title}}</h3>
-                <p>Receba nossos artigos e atualizações diretamente no seu e-mail.</p>
-                {{subscribe_form placeholder="Coloque seu e-mail"}}
-                <span class="gh-subscribe-rss">ou inscreva-se <a href="http://cloud.feedly.com/#subscription/feed/{{@blog.url}}/rss/">via RSS</a> com o Feedly!</span>
+                <section class="gh-subscribe">
+                    <h3 class="gh-subscribe-title">Inscreva-se no  {{@blog.title}}</h3>
+                    <p>Receba nossos artigos e atualizações diretamente no seu e-mail.</p>
+                    {{subscribe_form placeholder="Coloque seu e-mail"}}
+                    <span class="gh-subscribe-rss">ou inscreva-se <a href="http://cloud.feedly.com/#subscription/feed/{{@blog.url}}/rss/">via RSS</a> com o Feedly!</span>
+                </section>
             {{/if}}
-        </div>
-    </div>
-</header>
-
-{{!-- The main content area on the homepage --}}
-<main class="content" role="main">
-  <b><a href="{{@blog.url}}">Voltar</a></b>
+        </footer>
+    </article>
 </main>
