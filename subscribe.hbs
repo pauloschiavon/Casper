@@ -1,0 +1,21 @@
+{{#if success}}
+  <header>
+    <h1>Inscrito!</h1>
+  </header>
+
+  <p>
+    Você foi inscrito com sucesso no <em>{{@blog.title}}</em>
+    com o e-mail <em>{{email}}</em>.
+  </p>
+{{else}}
+  <section class="gh-subscribe">
+      <h3 class="gh-subscribe-title">Inscreva-se no  {{@blog.title}}</h3>
+      <p>Receba nossos artigos e atualizações no seu e-mail.</p>
+      {{subscribe_form placeholder="Coloque seu e-mail"}}
+      <span class="gh-subscribe-rss">ou inscreva-se <a href="http://cloud.feedly.com/#subscription/feed/{{@blog.url}}/rss/">via RSS</a> com o Feedly!</span>
+  </section>
+{{/if}}
+
+<br />
+<br />
+<a href="{{@blog.url}}" class="gh-flow-back">&larr; Voltar</a>
