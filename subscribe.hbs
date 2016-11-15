@@ -10,27 +10,30 @@
     </nav>
 </header>
 
-    
-
 
 {{!-- The main content area on the subscribe --}}
 <main class="content" role="main">
-    <article>
-        <footer class="post-footer">
-            {{#if success}}
-                <h3 class="gh-subscribe-title">Inscrito!</h3>
-
-                <p>
-                    Você foi inscrito com sucesso no <em>{{@blog.title}}</em> com o e-mail <em>{{email}}</em>.
-                </p>
-            {{else}}
-                <section class="gh-subscribe">
+    <article class="post">
+        <footer class="post-footer" style="padding-top: 0px;border-top:none;">
+            <section class="gh-subscribe">
+                {{#if success}}
+                    <h3 class="gh-subscribe-title">Inscrito!</h3>
+                    <p>Você foi inscrito com sucesso no <em>{{@blog.title}}</em> com o e-mail <em>{{email}}</em>.</p>
+                {{else}}
                     <h3 class="gh-subscribe-title">Inscreva-se no  {{@blog.title}}</h3>
                     <p>Receba nossos artigos e atualizações diretamente no seu e-mail.</p>
                     {{subscribe_form placeholder="Coloque seu e-mail"}}
                     <span class="gh-subscribe-rss">ou inscreva-se <a href="http://cloud.feedly.com/#subscription/feed/{{@blog.url}}/rss/">via RSS</a> com o Feedly!</span>
-                </section>
-            {{/if}}
+                {{/if}}
+            </section>
+
+            <br><br>
+            <section style="text-align: center;">
+                <b><a href="{{@blog.url}}">Voltar</a></b>
+            </section>
         </footer>
     </article>
 </main>
+
+
+
