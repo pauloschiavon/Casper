@@ -1,0 +1,25 @@
+.nav {
+	background: #e84429;
+}
+
+.post-image {
+	height: 230px;
+	margin-bottom: 5px;
+}
+
+.post-excerpt p {
+    text-align: justify;
+}
+
+.post-content p {
+    text-align: justify;
+}
+
+.post-content p a {
+	color: #009bc5;
+}
+
+.read-more {
+	color: #009bc5;
+	text-decoration: underline;
+}
