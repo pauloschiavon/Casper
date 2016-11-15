@@ -43,8 +43,8 @@
 	color: #009bc5;
 }
 
-.page-title {
-    color: #e84429;
+.no-cover .page-title {
+    color: #e84429 !important;
 }
 
 h1, h2, h3,
@@ -52,8 +52,9 @@ h4, h5, h6 {
     color: #e84429;
 }
 
-h4 a, h4 a:hover {
-    color: #e84429;
+.post-footer h4 a, 
+.post-footer h4 a:hover {
+    color: #e84429 !important;
 }
 
 .read-more {
