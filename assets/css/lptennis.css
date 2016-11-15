@@ -3,18 +3,18 @@
 }
 
 .nav-closed .menu-button:hover {
-    color: #009bc5;
+    color: #e84429;
 }
 
 .nav-closed .no-cover .menu-button:hover {
-    border-color: #009bc5;
-    color: #009bc5;
+    border-color: #e84429;
+    color: #e84429;
 }
 
 .nav-opened .menu-button {
     padding: 0 12px;
-    background: #009bc5;
-    border-color: #009bc5;
+    background: #e84429;
+    border-color: #e84429;
 }
 
 .nav a:link,
@@ -40,6 +40,11 @@
 
 .post-content p a {
 	color: #009bc5;
+}
+
+h1, h2, h3,
+h4, h5, h6 {
+    color: #e84429;
 }
 
 .read-more {
