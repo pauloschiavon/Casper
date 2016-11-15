@@ -3,22 +3,22 @@ a:hover {
 }
 
 .nav {
-    background: #e84429;
+    background: #009bc5;
 }
 
 .nav-closed .menu-button:hover {
-    color: #e84429 !important;
+    color: #009bc5 !important;
 }
 
 .nav-closed .no-cover .menu-button:hover {
-    border-color: #e84429;
-    color: #e84429 !important;
+    border-color: #009bc5;
+    color: #009bc5 !important;
 }
 
 .nav-opened .menu-button {
     padding: 0 12px;
-    background: #e84429;
-    border-color: #e84429;
+    background: #009bc5;
+    border-color: #009bc5;
 }
 
 .nav a:link,
