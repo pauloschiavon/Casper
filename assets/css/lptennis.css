@@ -56,8 +56,7 @@ h4, h5, h6 {
     color: #e84429 !important;
 }
 
-.post-footer h4 a, 
-.post-footer h4 a:hover {
+.post-footer h4 a {
     color: #e84429 !important;
 }
 
@@ -71,4 +70,14 @@ h4, h5, h6 {
 
 a:hover {
     color: #009bc5 !important;
+}
+
+.post-footer .share .icon-twitter:hover {
+    color: #55acee !important;
+}
+.post-footer .share .icon-facebook:hover {
+    color: #3b5998 !important;
+}
+.post-footer .share .icon-google-plus:hover {
+    color: #dd4b39 !important;
 }
