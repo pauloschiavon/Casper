@@ -2,8 +2,8 @@
 {{!-- The tag above means - insert everything in this file into the {body} of the default.hbs template --}}
 
 {{!-- The main content area on the homepage --}}
-<main id="content" class="content" role="main">
-  <article>
+<main class="content" role="main">
+  <footer class="post-footer">
     {{#if success}}
       <header>
         <h1>Inscrito!</h1>
@@ -24,6 +24,6 @@
 
     <br />
     <br />
-    <a href="{{@blog.url}}" class="gh-flow-back">&larr; Voltar</a>
-  </article>
+    <b><a href="{{@blog.url}}" class="gh-flow-back">Voltar</a></b>
+  </footer>
 </main>
