@@ -96,5 +96,8 @@ h4, h5, h6 {
 
 .post-footer blockquote {
     border-left: #e84429 0.4em solid;
-    font-size: 1.8rem;
+}
+
+.post-footer blockquote p {
+    font-size: 1.8rem !important;
 }
