@@ -1,14 +1,18 @@
+a:hover {
+    color: #009bc5 !important;
+}
+
 .nav {
-	background: #e84429;
+    background: #e84429;
 }
 
 .nav-closed .menu-button:hover {
-    color: #e84429;
+    color: #e84429 !important;
 }
 
 .nav-closed .no-cover .menu-button:hover {
     border-color: #e84429;
-    color: #e84429;
+    color: #e84429 !important;
 }
 
 .nav-opened .menu-button {
@@ -20,7 +24,7 @@
 .nav a:link,
 .nav a:visited,
 .nav-close {
-    color: #fff;
+    color: #fff !important;
 }
 
 .post-image {
@@ -60,16 +64,16 @@ h4, h5, h6 {
     color: #e84429 !important;
 }
 
+.post-footer h4 a:hover {
+    color: #009bc5 !important;
+}
+
 .read-more {
 	color: #009bc5;
 }
 
 .post-footer .share a {
     font-size: 2.618rem;
-}
-
-a:hover {
-    color: #009bc5 !important;
 }
 
 .post-footer .share .icon-twitter:hover {
