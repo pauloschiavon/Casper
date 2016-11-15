@@ -2,6 +2,26 @@
 	background: #e84429;
 }
 
+.nav-closed .menu-button:hover {
+    color: #009bc5;
+}
+
+.nav-closed .no-cover .menu-button:hover {
+    border-color: #009bc5;
+    color: #009bc5;
+}
+
+.nav-opened .menu-button {
+    padding: 0 12px;
+    background: #009bc5;
+    border-color: #009bc5;
+}
+
+.nav a:link,
+.nav a:visited {
+    color: #dcdcdc;
+}
+
 .post-image {
 	height: 230px;
 	margin-bottom: 5px;
@@ -24,5 +44,8 @@
 
 .read-more {
 	color: #009bc5;
-	text-decoration: underline;
+}
+
+.post-footer .share a {
+    font-size: 2.618rem;
 }
