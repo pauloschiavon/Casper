@@ -93,3 +93,8 @@ h4, h5, h6 {
 .post-footer .share .icon-google-plus:hover {
     color: #dd4b39 !important;
 }
+
+.post-footer blockquote {
+    border-left: #e84429 0.4em solid;
+    font-size: 1.8rem;
+}

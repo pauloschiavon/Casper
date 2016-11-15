@@ -31,30 +31,30 @@
 
         <footer class="post-footer">
 
-        {{!-- Everything inside the #author tags pulls data from the author --}}
-        {{#author}}
+            {{!-- Everything inside the #author tags pulls data from the author --}}
+            {{#author}}
 
-            {{#if image}}
-            <figure class="author-image">
-                <a class="img" href="{{url}}" style="background-image: url({{image}})"><span class="hidden">{{name}}'s Picture</span></a>
-            </figure>
-            {{/if}}
-
-            <section class="author">
-                <h4><a href="{{url}}">{{name}}</a></h4>
-
-                {{#if bio}}
-                    <p>{{bio}}</p>
-                {{else}}
-                    <p>Read <a href="{{url}}">more posts</a> by this author.</p>
+                {{#if image}}
+                <figure class="author-image">
+                    <a class="img" href="{{url}}" style="background-image: url({{image}})"><span class="hidden">{{name}}'s Picture</span></a>
+                </figure>
                 {{/if}}
-                <div class="author-meta">
-                    {{#if location}}<span class="author-location icon-location">{{location}}</span>{{/if}}
-                    {{#if website}}<span class="author-link icon-link"><a href="{{website}}">{{website}}</a></span>{{/if}}
-                </div>
-            </section>
 
-        {{/author}}
+                <section class="author">
+                    <h4><a href="{{url}}">{{name}}</a></h4>
+
+                    {{#if bio}}
+                        <p>{{bio}}</p>
+                    {{else}}
+                        <p>Read <a href="{{url}}">more posts</a> by this author.</p>
+                    {{/if}}
+                    <div class="author-meta">
+                        {{#if location}}<span class="author-location icon-location">{{location}}</span>{{/if}}
+                        {{#if website}}<span class="author-link icon-link"><a href="{{website}}">{{website}}</a></span>{{/if}}
+                    </div>
+                </section>
+
+            {{/author}}
 
             <section class="share">
                 <h4>Share this post</h4>
@@ -81,6 +81,11 @@
                 <span class="gh-subscribe-rss">ou inscreva-se <a href="http://cloud.feedly.com/#subscription/feed/{{@blog.url}}/rss/">via RSS</a> com o Feedly!</span>
             </section>
             {{/if}}
+
+            <blockquote>
+              <p style="color:#009bc5;">Você conhece a Lptennis?</p>
+              <p >Por meio de uma plataforma online robusta e segura, oferecemos soluções exclusivas a jogadores, gestores, professores e outros incentivadores do Tênis, aproximando e conectando todos os apaixonados pelo esporte dentro e fora das quadras</p>
+            </blockquote>
 
         </footer>
 
