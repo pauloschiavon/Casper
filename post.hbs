@@ -6,6 +6,27 @@
 {{!-- Everything inside the #post tags pulls data from the post --}}
 {{#post}}
 
+
+{{#contentFor "metaTags"}}
+    <meta property="og:type" content="article">
+    
+    <meta property="og:site_name"   content="Blog da Lptennis" />
+    <meta property="og:url"         content="{{url absolute="true"}}" />
+
+    <meta property="og:type"        content="article" />
+    <meta property="og:title"       content="{{title}}" />
+    <meta property="og:description" content="{{excerpt words="40"}}" />
+    <meta property="article:author" content="{{author.name}}">
+    <meta property="article:published_time" content="{{date}}" />
+    <meta name="twitter:card" content="summary" />
+    <meta property="og:locale" content="pt_BR" />
+
+    {{#if image}}
+        <meta property="og:image"   content="{{@blog.url}}{{image}}" />        
+        <meta name="twitter:image"  content="{{@blog.url}}{{image}}" />
+    {{/if}}
+{{/contentFor}}
+
 <header class="main-header post-head {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}">
     <nav class="main-nav {{#if image}}overlay{{/if}} clearfix">
         {{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>{{/if}}
