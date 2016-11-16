@@ -47,13 +47,13 @@ a:hover {
 	color: #009bc5;
 }
 
-.no-cover .page-title {
-    color: #e84429 !important;
-}
-
 h1, h2, h3,
 h4, h5, h6 {
     color: #e84429;
+}
+
+.no-cover .page-title {
+    color: #009bc5 !important;
 }
 
 .post-content h2,
