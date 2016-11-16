@@ -92,18 +92,19 @@
                 }(document, 'script', 'facebook-jssdk'));
             </script>
 
-            <div class="fb-comments" data-href="{{@blog.url}}{{url}}" data-numposts="10" data-width="100%"></div>
+            <div class="fb-comments" data-href="{{@blog.url}}{{url}}" data-numposts="5" data-width="100%"></div>
 
 
 
             {{!-- Email subscribe form at the bottom of the page --}}
             {{#if @labs.subscribers}}
-            <section class="gh-subscribe">
-                <h3 class="gh-subscribe-title">Inscreva-se no  {{@blog.title}}</h3>
-                <p>Receba nossos artigos e atualizações diretamente no seu e-mail.</p>
-                {{subscribe_form placeholder="Coloque seu e-mail"}}
-                <span class="gh-subscribe-rss">ou inscreva-se <a href="http://cloud.feedly.com/#subscription/feed/{{@blog.url}}/rss/">via RSS</a> com o Feedly!</span>
-            </section>
+                <br /><br /><br />
+                <section class="gh-subscribe">
+                    <h3 class="gh-subscribe-title">Inscreva-se no  {{@blog.title}}</h3>
+                    <p>Receba nossos artigos e atualizações diretamente no seu e-mail.</p>
+                    {{subscribe_form placeholder="Coloque seu e-mail"}}
+                    <span class="gh-subscribe-rss">ou inscreva-se <a href="http://cloud.feedly.com/#subscription/feed/{{@blog.url}}/rss/">via RSS</a> com o Feedly!</span>
+                </section>
             {{/if}}
             
             <br />
