@@ -55,6 +55,22 @@
     <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
 
     <script>
+        jQuery.fn.exists = function() { return this.length > 0; }
+
+        function ReplaceNumberWithPoints(yourNumber) {
+            var components = yourNumber.toString().split(".");
+            components [0] = components [0].replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+            return components.join(".");
+        }
+
+        if ($('#share-count').exists()) {
+            $.getJSON( 'http://graph.facebook.com/?id={{url absolute="true"}}', function( fbdata ) {
+                $('#share-count').text( ReplaceNumberWithPoints(fbdata.share.share_count + fbdata.share.comment_count) );
+            });
+        }
+    </script>
+
+    <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
