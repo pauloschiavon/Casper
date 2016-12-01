@@ -65,7 +65,7 @@
 
         if ($('#share-count').exists()) {
             $.getJSON( 'http://graph.facebook.com/?id={{url absolute="true"}}', function( fbdata ) {
-                $('#share-count').text( ReplaceNumberWithPoints(fbdata.share.share_count + fbdata.share.comment_count) );
+                $('#share-count').text(' ' + ReplaceNumberWithPoints(fbdata.share.share_count + fbdata.share.comment_count) );
             });
         }
     </script>
