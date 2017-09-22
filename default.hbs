@@ -24,10 +24,29 @@
     <link rel="stylesheet" type="text/css" href="{{asset "css/lptennis.css"}}" />
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
 
+
+    {{!-- Modal --}}
+    <link rel="stylesheet" type="text/css" href="{{asset "css/remodal.css"}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset "css/remodal-default-theme.css"}}" />
+
+
     {{!-- Ghost outputs important style and meta data with this tag --}}
     {{ghost_head}}
 </head>
 <body class="{{body_class}} nav-closed">
+
+    {{!-- Modal --}}
+    <div class="remodal" data-remodal-id="modal">
+        <button data-remodal-action="close" class="remodal-close"></button>
+        <h1>Remodal</h1>
+        <p>
+            Responsive, lightweight, fast, synchronized with CSS animations, fully customizable modal window plugin with declarative configuration and hash tracking.
+        </p>
+        <br>
+        <button data-remodal-action="cancel" class="remodal-cancel">Cancel</button>
+        <button data-remodal-action="confirm" class="remodal-confirm">OK</button>
+    </div>
+
 
     {{!-- The blog navigation links --}}
     {{navigation}}
@@ -39,6 +58,7 @@
 
         {{!-- The tiny footer at the very bottom --}}
         <footer class="site-footer clearfix">
+            <a href="#modal">.</a>
             <section class="copyright"><a href="{{@blog.url}}">{{@blog.title}}</a> &copy; {{date format="YYYY"}}</section>
             <section class="poweredby">Publicado pela <a href="http://Lptennis.com">Lptennis.com</a></section>
         </footer>
@@ -47,12 +67,19 @@
 
     {{!-- jQuery needs to come before `{{ghost_foot}}` so that jQuery can be used in code injection --}}
     <script type="text/javascript" src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+
     {{!-- Ghost outputs important scripts and data with this tag --}}
     {{ghost_foot}}
+    
     {{!-- Fitvids makes video embeds responsive and awesome --}}
     <script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
+    
     {{!-- The main JavaScript file for Casper --}}
     <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
+
+    {{!-- Modal --}}
+    <script type="text/javascript" src="{{asset "js/remodal.min.js"}}"></script>
+
 
     <script>
         /*
